@@ -1,3 +1,4 @@
+#!/usr/bin/env
 <?php
 
 require 'vendor/autoload.php';
