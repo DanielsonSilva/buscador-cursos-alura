@@ -1,7 +1,7 @@
 <?php
 
 return [
-    "target_php_version" => null,
+    "target_php_version" => '7.4.2',
     'directory_list' => [
         'src',
         'vendor/symfony/dom-crawler',

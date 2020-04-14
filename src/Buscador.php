@@ -1,7 +1,6 @@
 <?php
-namespace Alura\BuscadorDeCursos;
 
-require 'vendor/autoload.php';
+namespace Alura\BuscadorDeCursos;
 
 use GuzzleHttp\ClientInterface;
 use Symfony\Component\DomCrawler\Crawler;
@@ -28,11 +27,10 @@ class Buscador
         $cursos = $this->crawler->filter('span.card-curso__nome');
         $listaCursos = [];
 
-        foreach($cursos as $curso) {
+        foreach ($cursos as $curso) {
             $listaCursos[] = $curso->textContent;
         }
 
         return $listaCursos;
     }
-
 }
